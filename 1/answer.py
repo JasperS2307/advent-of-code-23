@@ -18,8 +18,7 @@ def part_one():
     for line in lines:
         total = total + extract(line)
 
-    print("The answer for part one is:")
-    print(total) 
+    print(f"The answer for part one is: {total}")
 
 def part_two():
     mapped_numbers = {
@@ -55,8 +54,7 @@ def part_two():
         total = total + extract(newline)
 
     print("-----------------")
-    print("The answer for part two is:")
-    print(total)
+    print(f"The answer for part two is: {total}")
 
 if __name__ == '__main__':
     part_one()

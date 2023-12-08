@@ -49,7 +49,7 @@ def part_one():
     for line in lines:
         score += parse_line(line.strip())
 
-    print("The answer for part one is:")
+    print(f"The answer for part one is: {score}")
     print(score) 
 
 def part_two():
@@ -61,8 +61,7 @@ def part_two():
         score += get_lowest_value(line.strip())
 
     print("-----------------")
-    print("The answer for part two is:")
-    print(score) 
+    print(f"The answer for part two is: {score}")
 
 
 if __name__ == '__main__':
