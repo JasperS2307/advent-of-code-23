@@ -45,11 +45,22 @@ def part_one():
     print(f"The answer for part one is: {possibilities_sum}")
 
 def part_two():
-    score = 0
+    race_time = int(lines[0].strip().split(":")[1].replace(" ", ""))
+    race_distance = int(lines[1].strip().split(":")[1].replace(" ", ""))
+
+    hold_ms = 0
+    race_possibilities = 0
+
+    while hold_ms < race_time:
+        time_left = race_time - hold_ms
+        distance_travelled = hold_ms * time_left
+        if distance_travelled > race_distance:
+            race_possibilities += 1
+        hold_ms += 1
 
     print("-----------------")
-    print(f"The answer for part two is: {score}")
+    print(f"The answer for part two is: {race_possibilities}")
 
 if __name__ == '__main__':
-    part_one()
+    # part_one()
     part_two()
