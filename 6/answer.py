@@ -62,5 +62,5 @@ def part_two():
     print(f"The answer for part two is: {race_possibilities}")
 
 if __name__ == '__main__':
-    # part_one()
+    part_one()
     part_two()

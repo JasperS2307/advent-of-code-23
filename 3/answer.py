@@ -108,5 +108,5 @@ def part_two():
     print("")
 
 if __name__ == '__main__':
-    # part_one()
+    part_one()
     part_two()
